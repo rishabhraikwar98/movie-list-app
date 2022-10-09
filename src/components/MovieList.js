@@ -15,8 +15,6 @@ export default function MovieList() {
     fetch(`https://imdb8.p.rapidapi.com/auto-complete?q=mo%20of%20thr`, options)
       .then((response) => response.json())
       .then((response) => {
-        console.log(response);
-        console.log(response.d);
         setData(response.d);
       })
       .catch((err) => console.error(err));
